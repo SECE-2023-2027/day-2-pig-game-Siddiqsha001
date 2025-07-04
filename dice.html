@@ -248,48 +248,48 @@
             document.querySelector('.player-1').classList.remove('winner');
             document.querySelector('.player-2').classList.remove('winner');
 
-            // Reset dice to show 2 dots
+            //reset dice to show 2 dots
             updateDiceDots(2);
         }
 
         function updateDiceDots(number) {
-            // Clear existing dots
+            //clear existing dots
             diceDotsContainer.innerHTML = '';
             
-            // Create and position dots based on dice number
+            //create and position dots based on dice number
             switch(number) {
                 case 1:
-                    createDot(50, 50); // center
+                    createDot(50, 50); //center
                     break;
                 case 2:
-                    createDot(25, 25); // top left
-                    createDot(75, 75); // bottom right
+                    createDot(25, 25); //top left
+                    createDot(75, 75); //bottom right
                     break;
                 case 3:
-                    createDot(25, 25); // top left
-                    createDot(50, 50); // center
-                    createDot(75, 75); // bottom right
+                    createDot(25, 25); //top left
+                    createDot(50, 50); //center
+                    createDot(75, 75); //bottom right
                     break;
                 case 4:
-                    createDot(25, 25); // top left
-                    createDot(25, 75); // bottom left
-                    createDot(75, 25); // top right
-                    createDot(75, 75); // bottom right
+                    createDot(25, 25); //top left
+                    createDot(25, 75); //bottom left
+                    createDot(75, 25); //top right
+                    createDot(75, 75); //bottom right
                     break;
                 case 5:
-                    createDot(25, 25); // top left
-                    createDot(25, 75); // bottom left
-                    createDot(50, 50); // center
-                    createDot(75, 25); // top right
-                    createDot(75, 75); // bottom right
+                    createDot(25, 25); //top left
+                    createDot(25, 75); //bottom left
+                    createDot(50, 50); //center
+                    createDot(75, 25); //top right
+                    createDot(75, 75); //bottom right
                     break;
                 case 6:
-                    createDot(25, 25); // top left
-                    createDot(25, 50); // middle left
-                    createDot(25, 75); // bottom left
-                    createDot(75, 25); // top right
-                    createDot(75, 50); // middle right
-                    createDot(75, 75); // bottom right
+                    createDot(25, 25); //top left
+                    createDot(25, 50); //middle left
+                    createDot(25, 75); //bottom left
+                    createDot(75, 25); //top right
+                    createDot(75, 50); //middle right
+                    createDot(75, 75); //bottom right
                     break;
             }
         }
